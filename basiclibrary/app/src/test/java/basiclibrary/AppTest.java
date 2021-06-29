@@ -4,6 +4,9 @@
 package basiclibrary;
 
 import org.junit.jupiter.api.Test;
+
+import basiclibrary.basiclibrary.App;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
