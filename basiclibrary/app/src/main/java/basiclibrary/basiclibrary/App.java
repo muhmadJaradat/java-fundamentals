@@ -58,14 +58,17 @@ arraysOfArrays(weeklyMonthTemperatures);
 
     public static void arraysOfArrays(int[][] arr) {
         int[] tempArr = new int[arr[0].length];
-        int sum = 0;
+        double sum = 0;
         double avg =0;
         double temp = 2147483647;
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[i].length; j++) {
                 sum += arr[i][j];
             }
+            
             avg =sum/ arr[i].length;
+            sum=0;
+            System.out.println(avg);
             if (avg < temp) {
                 for (int j = 0; j < arr[i].length; j++) {
                     tempArr[j] = arr[i][j];
