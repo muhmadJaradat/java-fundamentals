@@ -7,6 +7,7 @@ public class Review {
     private  String author;
     private String body;
     private int stars;
+    private String movie;
 
     public Review(String author, String body, int stars) {
         this.author = author;
@@ -14,9 +15,19 @@ public class Review {
         this.stars = stars;
     }
 
+    public Review(String author, String body, int stars,String movie) {
+        this.author = author;
+        this.body = body;
+        this.stars = stars;
+        this.movie=movie;
+    }
+
     public Review() {
     }
 
+    public String getMovie() {
+        return movie;
+    }
 
     public String getAuthor() {
         return author;

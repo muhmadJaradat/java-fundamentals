@@ -3,11 +3,11 @@ package inhertiance;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Resturant extends Review {
+public class Resturant extends Review implements addReview {
     private  String name;
     private int stars;
     private  String price;
-    List<Review> resturantReview=new ArrayList();
+    List<Review> reviews =new ArrayList();
 
     public Resturant(String name,String price) {
 
@@ -40,19 +40,20 @@ public class Resturant extends Review {
         if (stars==1) return name +" has "+stars+" star and its price is "+price;
         return name +" has "+stars+" stars and its price is "+price;
     }
+    @Override
     public void addReview(Review review){
-        if (resturantReview.size()==0){
-            resturantReview.add(review);
+        if (reviews.size()==0){
+            reviews.add(review);
            setStars(review.getStars());
         }
         else {
             boolean isHere=false;
-            for (Review el: resturantReview
+            for (Review el: reviews
                  ) {
                 if(el.getAuthor()==review.getAuthor())isHere=true;
             }
             if (isHere == false) {
-                resturantReview.add(review);
+                reviews.add(review);
                 setStars(review.getStars());
             }
 
