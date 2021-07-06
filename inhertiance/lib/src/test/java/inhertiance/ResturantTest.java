@@ -21,7 +21,7 @@ public class ResturantTest {
         resturant.addReview(new Review("moe","bad Resturant",4));
         resturant.addReview(new Review("Yousef","bad Resturant",3));
          // Check if the add review methods add dublicate or not ,, here we should only have 2 reviews
-        assertEquals( resturant.resturantReview.size(),2);
+        assertEquals( resturant.reviews.size(),2);
         // Check if the rating does change after adding new review
         //here the based on last valie update the rating stars should be 4
         assertEquals( resturant.getStars(),4);

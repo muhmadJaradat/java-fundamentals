@@ -3,14 +3,12 @@
  */
 package inhertiance;
 
-import java.util.Arrays;
-
 public class Library {
     public static void main(String[] args) {
         Resturant resturant=new Resturant("KFC","$$$");
 
         resturant.addReview(new Review("","",4));
-        System.out.println(resturant.resturantReview);
+        System.out.println(resturant.reviews);
     }
 
 
