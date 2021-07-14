@@ -1,5 +1,9 @@
 # Lab 06: Inheritance and Interfaces
 
+[Code](lib/src/main/java/inhertiance)
+
+[Test](lib/src/main/java/inhertiance)
+
 In this Lab a Restaurant and Review classes had been made, each one has its own constructor.
 
 The restaurant has 4 properties : name,stars, price category and reviews list, and it has a method to add a new review,
