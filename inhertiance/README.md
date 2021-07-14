@@ -2,7 +2,7 @@
 
 [Code](lib/src/main/java/inhertiance)
 
-[Test](lib/src/main/java/inhertiance)
+[Test](lib/src/test/java/inhertiance)
 
 In this Lab a Restaurant and Review classes had been made, each one has its own constructor.
 
