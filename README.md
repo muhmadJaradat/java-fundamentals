@@ -1,5 +1,7 @@
 # java-fundamentals
 
+## [Inhertiance](inhertiance/README.md)
+
 ## basics\Main methods.
 
 ### pluralize
@@ -27,3 +29,4 @@ Checks an array of intagers for duplicate values
 ### float average(float[] arr)
 
 Finds the average of an array of floats
+
